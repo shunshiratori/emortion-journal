@@ -103,7 +103,8 @@ public class SecurityConfig {
         // 開発中のフロントのオリジンを列挙（Vite=5173, Next=3000）
         cors.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "http://localhost:3000"
+                "http://localhost:3000",
+                "https://emortion-journal-frontend.vercel.app/"
         ));
         cors.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
         cors.setAllowedHeaders(List.of("*")); // もしくは ["Authorization","Content-Type"]
